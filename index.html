@@ -4,12 +4,12 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>404 Guardian – Your Webflow 404 Safety Net</title>
-  <meta name="description" content="Stop losing visitors to dead ends. 404 Guardian captures every 404 hit on your Webflow sites, suggests the best redirect, and helps you ship fixes in minutes." />
+  <meta name="description" content="Stop losing visitors to dead ends. 404 Guardian plugs into Webflow in minutes, captures every 404 hit, suggests the best redirect, and helps you ship fixes fast." />
 
   <!-- Open Graph / Twitter -->
   <meta property="og:type" content="website" />
   <meta property="og:title" content="404 Guardian – Your Webflow 404 Safety Net" />
-  <meta property="og:description" content="Capture 404s, get smart redirect suggestions, export CSVs for Webflow, and fix broken links fast." />
+  <meta property="og:description" content="Plug 404 Guardian into Webflow in minutes, capture 404s instantly, get smart redirect suggestions, and export CSVs fast." />
   <meta property="og:image" content="/og-404-guardian.png" />
   <meta property="og:url" content="https://404guardian.app/" />
   <meta name="twitter:card" content="summary_large_image" />
@@ -54,6 +54,8 @@
     "url": "https://404guardian.app/"
   }
   </script>
+
+  <link rel="icon" type="image/png" href="favicon.png">
 </head>
 <body class="bg-slate-50 text-slate-900 selection:bg-brand-200 selection:text-slate-900">
   <!-- Top Bar -->
@@ -73,11 +75,12 @@
         <nav class="hidden md:flex items-center gap-6 text-sm">
           <a href="#features" class="hover:text-brand-700">Features</a>
           <a href="#how" class="hover:text-brand-700">How it works</a>
+          <a href="#plans" class="hover:text-brand-700">Pricing</a>
           <a href="#faq" class="hover:text-brand-700">FAQ</a>
           <a href="#cta" class="hover:text-brand-700">Start</a>
         </nav>
         <div class="hidden md:flex items-center gap-3">
-          <a href="#demo" class="rounded-xl border border-slate-300 px-3.5 py-2 text-sm font-medium hover:shadow">Live demo</a>
+          <a href="#demo" class="rounded-xl border border-slate-300 px-3.5 py-2 text-sm font-medium hover:shadow">Demo</a>
           <a href="https://webflow.com/apps/detail/404-guardian" class="inline-flex items-center gap-2 rounded-xl bg-brand-600 px-4 py-2 text-sm font-semibold text-white shadow hover:bg-brand-700">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M13.3 3.4c0 1.1-.9 2-2 2s-2-.9-2-2 .9-2 2-2 2 .9 2 2zm-2 4.1c-4.4 0-8 3.6-8 8 0 2.1.8 4 2.1 5.4.6.6 1.6.6 2.1 0s.6-1.6 0-2.1c-.8-.8-1.3-2-1.3-3.3 0-2.6 2.1-4.8 4.8-4.8s4.8 2.1 4.8 4.8c0 1.3-.5 2.4-1.3 3.3-.6.6-.6 1.6 0 2.1.6.6 1.6.6 2.1 0 1.3-1.4 2.1-3.3 2.1-5.4 0-4.4-3.6-8-8-8z"/></svg>
             Install on Webflow
@@ -94,9 +97,10 @@
       <nav class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-3 flex flex-col gap-2 text-sm">
         <a href="#features" class="py-2">Features</a>
         <a href="#how" class="py-2">How it works</a>
+        <a href="#plans" class="py-2">Pricing</a>
         <a href="#faq" class="py-2">FAQ</a>
         <a href="#cta" class="py-2">Start</a>
-        <a href="#demo" class="py-2">Live demo</a>
+        <a href="#demo" class="py-2">Demo</a>
         <a href="https://webflow.com/apps/detail/404-guardian" class="py-2 font-semibold text-brand-700">Install on Webflow →</a>
       </nav>
     </div>
@@ -108,12 +112,11 @@
       <div class="grid lg:grid-cols-2 gap-10 items-center">
         <div>
           <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight">Stop Losing Visitors to <span class="text-brand-600">Dead Ends</span></h1>
-          <p class="mt-4 text-lg text-slate-700 max-w-xl">404 Guardian captures every 404 hit on your Webflow sites, suggests the best redirect, and helps you ship fixes in minutes instead of hours.</p>
+          <p class="mt-4 text-lg text-slate-700 max-w-xl">404 Guardian captures every 404 hit on your Webflow sites, suggests the best redirect, all in 1 click!</p>
           <div class="mt-8 flex flex-col sm:flex-row gap-3">
             <a href="https://webflow.com/apps/detail/404-guardian" class="inline-flex items-center justify-center rounded-xl bg-brand-600 px-5 py-3 text-white font-semibold shadow hover:bg-brand-700">Install on Webflow</a>
-            <a href="#demo" class="inline-flex items-center justify-center rounded-xl border border-slate-300 px-5 py-3 font-semibold hover:shadow">See a live demo</a>
+            <a href="#demo" class="inline-flex items-center justify-center rounded-xl border border-slate-300 px-5 py-3 font-semibold hover:shadow">Demo</a>
           </div>
-          <div class="mt-4 text-xs text-slate-500">No Enterprise plan required for CSV exports. Redirect API push requires Webflow Enterprise.</div>
         </div>
         <div class="relative">
           <!-- Placeholder dashboard mock -->
@@ -181,27 +184,27 @@
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
         <div class="rounded-2xl border border-slate-200 bg-white p-5">
           <h3 class="text-base font-semibold">Automatic 404 Tracking</h3>
-          <p class="mt-1 text-sm text-slate-600">Logs missing path, timestamp, referrer, user agent—everything you need to diagnose issues.</p>
+          <p class="mt-1 text-sm text-slate-600">Logs missing path, date, count—everything you need to diagnose issues instantly.</p>
         </div>
         <div class="rounded-2xl border border-slate-200 bg-white p-5">
           <h3 class="text-base font-semibold">Smart Redirect Suggestions</h3>
-          <p class="mt-1 text-sm text-slate-600">Fuzzy matches across Webflow pages & CMS items, with slug & folder awareness.</p>
+          <p class="mt-1 text-sm text-slate-600">Fuzzy matches across Webflow pages & CMS items, with slug & folder awareness—no training needed.</p>
         </div>
         <div class="rounded-2xl border border-slate-200 bg-white p-5">
           <h3 class="text-base font-semibold">One‑Click Mappings</h3>
-          <p class="mt-1 text-sm text-slate-600">Approve, stage, and build a clean redirect list in seconds.</p>
+          <p class="mt-1 text-sm text-slate-600">Approve, stage, and build a clean redirect list in seconds—no spreadsheets to maintain.</p>
         </div>
         <div class="rounded-2xl border border-slate-200 bg-white p-5">
           <h3 class="text-base font-semibold">Instant CSV Export</h3>
-          <p class="mt-1 text-sm text-slate-600">Download Webflow‑ready mapping CSVs to upload or hand off.</p>
+          <p class="mt-1 text-sm text-slate-600">Download Webflow‑ready mapping CSVs to upload or hand off without any manual cleanup.</p>
         </div>
         <div class="rounded-2xl border border-slate-200 bg-white p-5">
           <h3 class="text-base font-semibold">Protected Access</h3>
-          <p class="mt-1 text-sm text-slate-600">OAuth via Webflow, encrypted token storage, signed cookies.</p>
+          <p class="mt-1 text-sm text-slate-600">OAuth via Webflow, encrypted token storage, signed cookies—secure by default.</p>
         </div>
         <div class="rounded-2xl border border-slate-200 bg-white p-5">
-          <h3 class="text-base font-semibold">Premium (Soon)</h3>
-          <p class="mt-1 text-sm text-slate-600">Multi‑workspace dashboards, API pushes, longer retention, team access.</p>
+          <h3 class="text-base font-semibold">Set Up Predictably</h3>
+          <p class="mt-1 text-sm text-slate-600">Clear onboarding checklists and guardrails make integration painless for busy teams.</p>
         </div>
       </div>
     </div>
@@ -212,32 +215,32 @@
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
       <div class="max-w-2xl">
         <h2 class="text-3xl font-bold tracking-tight">How It Works</h2>
-        <p class="mt-2 text-slate-600">From authorization to export in six simple steps.</p>
+        <p class="mt-2 text-slate-600">From install to actionable redirects in under ten minutes.</p>
       </div>
       <ol class="mt-8 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
         <li class="rounded-2xl border border-slate-200 bg-white p-6">
-          <p class="font-semibold">1. Connect via OAuth</p>
-          <p class="mt-1 text-sm text-slate-600">Install the Webflow app and authorize the workspaces you want us to monitor.</p>
+          <p class="font-semibold">1. One-click install</p>
+          <p class="mt-1 text-sm text-slate-600">Install the Webflow app, authorize a workspace, and 404 Guardian starts logging within seconds.</p>
         </li>
         <li class="rounded-2xl border border-slate-200 bg-white p-6">
-          <p class="font-semibold">2. Select a Site & Date Range</p>
-          <p class="mt-1 text-sm text-slate-600">Pick your site and reporting period. Data loads automatically.</p>
+          <p class="font-semibold">2. Select a site & date range</p>
+          <p class="mt-1 text-sm text-slate-600">Pick your site and reporting period. Fresh data appears instantly—no configuration required.</p>
         </li>
         <li class="rounded-2xl border border-slate-200 bg-white p-6">
-          <p class="font-semibold">3. Explore 404 Events</p>
-          <p class="mt-1 text-sm text-slate-600">See paths, hit counts, and timing to understand impact.</p>
+          <p class="font-semibold">3. Explore 404 events</p>
+          <p class="mt-1 text-sm text-slate-600">See paths, hit counts, and timing instantly—no manual tagging or tracking snippets.</p>
         </li>
         <li class="rounded-2xl border border-slate-200 bg-white p-6">
-          <p class="font-semibold">4. Discover Redirect Suggestions</p>
-          <p class="mt-1 text-sm text-slate-600">Fuzzy logic compares slugs, folders, and CMS content.</p>
+          <p class="font-semibold">4. Discover redirect suggestions</p>
+          <p class="mt-1 text-sm text-slate-600">Fuzzy logic compares slugs, folders, and CMS content automatically—no setup needed.</p>
         </li>
         <li class="rounded-2xl border border-slate-200 bg-white p-6">
-          <p class="font-semibold">5. Approve & Stage Mappings</p>
-          <p class="mt-1 text-sm text-slate-600">Lock in the destination you want; queue as many as needed.</p>
+          <p class="font-semibold">5. Approve & stage mappings</p>
+          <p class="mt-1 text-sm text-slate-600">Lock in the destination you want; queue as many as needed with single-click actions.</p>
         </li>
         <li class="rounded-2xl border border-slate-200 bg-white p-6">
-          <p class="font-semibold">6. Export & Apply</p>
-          <p class="mt-1 text-sm text-slate-600">Download Webflow‑ready CSVs (or push automatically on Premium).</p>
+          <p class="font-semibold">6. Export & apply</p>
+          <p class="mt-1 text-sm text-slate-600">Download Webflow‑ready CSVs (or push automatically on Premium) without touching code.</p>
         </li>
       </ol>
     </div>
@@ -250,34 +253,86 @@
         <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
           <div>
             <h3 class="text-2xl font-bold tracking-tight">See it in action</h3>
-            <p class="mt-1 text-slate-600">Open the interactive demo and play with sample 404 data, suggestions, and exports.</p>
+            <p class="mt-1 text-slate-600">Open the demo and explore how the integration works end-to-end before you finish your coffee.</p>
           </div>
-          <a href="https://demo.404guardian.app" class="inline-flex items-center rounded-xl bg-slate-900 px-5 py-3 text-white font-semibold hover:bg-slate-800">Open live demo</a>
+          <a href="https://demo.404guardian.app" class="inline-flex items-center rounded-xl bg-slate-900 px-5 py-3 text-white font-semibold hover:bg-slate-800">Demo</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Coming soon / Promo -->
-  <section class="py-8">
+  <!-- Plans -->
+  <section id="plans" class="py-16">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-      <div class="grid gap-6 md:grid-cols-2">
-        <div class="rounded-2xl border border-slate-200 bg-white p-6">
-          <h3 class="text-lg font-semibold">Coming Soon: Premium Tier</h3>
-          <ul class="mt-2 list-disc pl-5 text-sm text-slate-700 space-y-1">
-            <li>Multi‑workspace dashboards</li>
-            <li>Automated redirect pushes via API</li>
-            <li>90‑day+ retention & audit trails</li>
-            <li>Role‑based team access</li>
+      <div class="max-w-2xl">
+        <h2 class="text-3xl font-bold tracking-tight">Plans for Every Team</h2>
+        <p class="mt-2 text-slate-600">Start for free, grow with Pro, and scale confidently with Enterprise. Each tier keeps your visitor data protected.</p>
+      </div>
+      <div class="mt-8 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+          <span class="inline-flex items-center justify-center rounded-full bg-brand-50 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-brand-700">Free Plan</span>
+          <div class="mt-4 flex items-baseline gap-2 text-slate-900">
+            <span class="text-3xl font-bold">$0</span>
+            <span class="text-sm font-medium text-slate-500">per month</span>
+          </div>
+          <h3 class="mt-2 text-xl font-semibold text-slate-900">Get started in minutes</h3>
+          <ul class="mt-4 space-y-2 text-sm text-slate-600">
+            <li>Top missing path for the current day immediately</li>
+            <li>Live 404 logging capped to the last hour</li>
+            <li>Manual redirect export & import only</li>
+            <li>Trial-limited access before upgrade required</li>
           </ul>
         </div>
-        <div class="rounded-2xl border border-slate-200 bg-white p-6">
-          <h3 class="text-lg font-semibold">Why Teams Love 404 Guardian</h3>
-          <ul class="mt-2 list-disc pl-5 text-sm text-slate-700 space-y-1">
-            <li>Zero guesswork—pair each 404 with a suggested destination.</li>
-            <li>Editor‑safe workflows—export before touching Webflow.</li>
-            <li>Stay ahead of content changes—fix links before tickets arrive.</li>
+        <div class="rounded-2xl border-2 border-brand-200 bg-white p-6 shadow-md">
+          <span class="inline-flex items-center justify-center rounded-full bg-brand-100 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-brand-800">Premium Plan</span>
+          <div class="mt-4 flex items-baseline gap-2 text-slate-900">
+            <span class="text-3xl font-bold">$5</span>
+            <span class="text-sm font-medium text-slate-500">per month</span>
+          </div>
+          <h3 class="mt-2 text-xl font-semibold text-slate-900">Advanced automation & insights</h3>
+          <ul class="mt-4 space-y-2 text-sm text-slate-600">
+            <li>Full missing-path leaderboard across custom date ranges in seconds</li>
+            <li>Automated redirect pushes via Webflow API</li>
+            <li>Long-term retention with audit history</li>
+            <li>Priority workspace support & premium overrides</li>
           </ul>
+        </div>
+        <div class="rounded-2xl border border-slate-200 bg-slate-900 p-6 text-white shadow-lg">
+          <span class="inline-flex items-center justify-center rounded-full bg-white/10 px-3 py-1 text-xs font-semibold uppercase tracking-wide">Enterprise</span>
+          <div class="mt-4 flex items-baseline gap-2">
+            <span class="text-sm font-semibold tracking-wide uppercase text-white/60">Coming soon</span>
+          </div>
+          <h3 class="mt-2 text-xl font-semibold">Scale with guardrails</h3>
+          <ul class="mt-4 space-y-2 text-sm text-slate-200">
+            <li>Unlimited historical retention with anomaly alerts</li>
+            <li>Role-based governance, SSO, and granular API keys</li>
+            <li>Custom redirect workflows & SLA-backed automation</li>
+            <li>Dedicated success manager and quarterly optimization reviews</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Teams Love -->
+  <section class="py-16 bg-gradient-to-b from-white to-slate-100">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="max-w-2xl">
+        <h2 class="text-3xl font-bold tracking-tight">Why teams love 404 Guardian</h2>
+        <p class="mt-2 text-slate-600">Thoughtful guardrails keep redirects accurate, secure, and collaborative.</p>
+      </div>
+      <div class="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <div class="rounded-2xl border border-white/60 bg-white p-6 shadow-sm">
+          <h3 class="text-lg font-semibold text-slate-900">Redirect clarity</h3>
+          <p class="mt-2 text-sm text-slate-600">Zero guesswork—pair each 404 hit with guided suggestions and validations before publishing.</p>
+        </div>
+        <div class="rounded-2xl border border-white/60 bg-white p-6 shadow-sm">
+          <h3 class="text-lg font-semibold text-slate-900">Safe collaboration</h3>
+          <p class="mt-2 text-sm text-slate-600">Editor-safe workflows with stage-and-review queues, exports, and rollback-friendly checks.</p>
+        </div>
+        <div class="rounded-2xl border border-white/60 bg-white p-6 shadow-sm">
+          <h3 class="text-lg font-semibold text-slate-900">Proactive coverage</h3>
+          <p class="mt-2 text-sm text-slate-600">Stay ahead of launches—monitor fresh campaigns, flag anomalies, and fix links before tickets arrive.</p>
         </div>
       </div>
     </div>
@@ -292,31 +347,24 @@
       <div class="mt-8 grid gap-3">
         <details class="group rounded-xl border border-slate-200 bg-white p-5">
           <summary class="flex cursor-pointer list-none items-center justify-between font-medium">
-            Do I need a Webflow Enterprise plan?
+            How fast can I get set up?
             <span class="ml-2 text-slate-400 group-open:rotate-180 transition">▾</span>
           </summary>
-          <p class="mt-2 text-sm text-slate-600">No. Anyone can log 404s and export CSVs. Only the direct redirect API requires Enterprise access.</p>
+          <p class="mt-2 text-sm text-slate-600">Most teams authorize the Webflow app and see their first 404 insights in under five minutes.</p>
         </details>
         <details class="group rounded-xl border border-slate-200 bg-white p-5">
           <summary class="flex cursor-pointer list-none items-center justify-between font-medium">
-            Which data does the app collect?
+            Do I need to add scripts or change templates?
             <span class="ml-2 text-slate-400 group-open:rotate-180 transition">▾</span>
           </summary>
-          <p class="mt-2 text-sm text-slate-600">We store 404 paths, basic event metadata (timestamp, referrer, user agent), and encrypted OAuth tokens. No visitor personal info.</p>
-        </details>
-        <details class="group rounded-xl border border-slate-200 bg-white p-5">
-          <summary class="flex cursor-pointer list-none items-center justify-between font-medium">
-            How often should I export CSVs?
-            <span class="ml-2 text-slate-400 group-open:rotate-180 transition">▾</span>
-          </summary>
-          <p class="mt-2 text-sm text-slate-600">We recommend weekly exports or whenever new campaigns go live.</p>
+          <p class="mt-2 text-sm text-slate-600">No code changes required. 404 Guardian plugs directly into your Webflow data layer.</p>
         </details>
         <details class="group rounded-xl border border-slate-200 bg-white p-5">
           <summary class="flex cursor-pointer list-none items-center justify-between font-medium">
             Can multiple teammates collaborate?
             <span class="ml-2 text-slate-400 group-open:rotate-180 transition">▾</span>
           </summary>
-          <p class="mt-2 text-sm text-slate-600">Yes. Premium workspaces (coming soon) will support role‑based access and shared dashboards.</p>
+          <p class="mt-2 text-sm text-slate-600">Premium workspaces (coming soon) will support role‑based access and shared dashboards.</p>
         </details>
         <details class="group rounded-xl border border-slate-200 bg-white p-5">
           <summary class="flex cursor-pointer list-none items-center justify-between font-medium">
@@ -324,13 +372,6 @@
             <span class="ml-2 text-slate-400 group-open:rotate-180 transition">▾</span>
           </summary>
           <p class="mt-2 text-sm text-slate-600">You always control the mapping. If no suggestion fits, create your own redirect manually.</p>
-        </details>
-        <details class="group rounded-xl border border-slate-200 bg-white p-5">
-          <summary class="flex cursor-pointer list-none items-center justify-between font-medium">
-            How do I uninstall?
-            <span class="ml-2 text-slate-400 group-open:rotate-180 transition">▾</span>
-          </summary>
-          <p class="mt-2 text-sm text-slate-600">Disconnect via the dashboard’s logout, clear data with <code class="rounded bg-slate-100 px-1">/disconnect</code>, and remove the app in Webflow settings.</p>
         </details>
       </div>
     </div>
@@ -342,11 +383,11 @@
       <div class="grid items-center gap-8 md:grid-cols-3">
         <div class="md:col-span-2">
           <h2 class="text-3xl font-bold tracking-tight">Start Protecting Your Visitors Today</h2>
-          <p class="mt-2 text-slate-300">Authorize your Webflow workspace, let 404 Guardian track every dead end, and keep users right where they belong.</p>
+          <p class="mt-2 text-slate-300">Authorize your Webflow workspace, let 404 Guardian track every dead end, and keep users right where they belong—no dev tickets, no waiting.</p>
         </div>
         <div class="flex md:justify-end gap-3">
           <a href="https://webflow.com/apps/detail/404-guardian" class="inline-flex items-center justify-center rounded-xl bg-brand-500 px-5 py-3 font-semibold text-slate-900 hover:bg-brand-400">Install on Webflow</a>
-          <a href="#demo" class="inline-flex items-center justify-center rounded-xl border border-slate-700 px-5 py-3 font-semibold hover:bg-slate-800">Try demo</a>
+          <a href="#demo" class="inline-flex items-center justify-center rounded-xl border border-slate-700 px-5 py-3 font-semibold hover:bg-slate-800">Demo</a>
         </div>
       </div>
     </div>
@@ -358,13 +399,105 @@
       <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
         <div class="text-sm text-slate-500">© <span id="year"></span> 404 Guardian. All rights reserved.</div>
         <nav class="flex gap-5 text-sm">
-          <a href="#" class="text-slate-500 hover:text-slate-900">Privacy</a>
-          <a href="#" class="text-slate-500 hover:text-slate-900">Terms</a>
-          <a href="mailto:hello@404guardian.app" class="text-slate-500 hover:text-slate-900">Support</a>
+          <button type="button" id="dataPolicyBtn" class="text-slate-500 hover:text-slate-900">Data policy</button>
+          <button type="button" id="privacyBtn" class="text-slate-500 hover:text-slate-900">Privacy</button>
+          <button type="button" id="termsBtn" class="text-slate-500 hover:text-slate-900">Terms</button>
+          <a href="mailto:info@fegima.com" class="text-slate-500 hover:text-slate-900">Support</a>
         </nav>
       </div>
     </div>
   </footer>
+
+  <div id="dataPolicyModal" class="fixed inset-0 z-50 hidden bg-slate-900/60 backdrop-blur-sm px-4 py-10 overflow-y-auto">
+    <div class="mx-auto max-w-xl rounded-2xl border border-slate-200 bg-white shadow-xl">
+      <div class="flex items-start justify-between gap-6 border-b border-slate-200 px-6 py-5">
+        <div>
+          <p class="text-sm font-semibold uppercase tracking-wide text-brand-600">Data Confidence</p>
+          <h3 class="mt-1 text-2xl font-bold tracking-tight text-slate-900">How 404 Guardian protects your data</h3>
+          <p class="mt-2 text-sm text-slate-600">We only collect what is necessary to diagnose and fix 404 issues, and we are transparent about every step.</p>
+        </div>
+        <button type="button" id="closeDataPolicy" class="rounded-lg p-1.5 text-slate-400 hover:bg-slate-100 hover:text-slate-600" aria-label="Close data policy dialog"><span aria-hidden="true">&times;</span></button>
+      </div>
+      <div class="space-y-4 px-6 py-6 text-sm text-slate-600">
+        <div class="rounded-xl border border-slate-200 bg-slate-50/80 p-4">
+          <p class="font-semibold text-slate-900">Respect for privacy comes first</p>
+          <p class="mt-1">We comply with applicable privacy laws and Marketplace rules. Personal data is never sold or repurposed beyond helping you resolve dead links.</p>
+        </div>
+        <div class="rounded-xl border border-slate-200 bg-slate-50/80 p-4">
+          <p class="font-semibold text-slate-900">Transparent data practices</p>
+          <p class="mt-1">Every data point we collect—missing paths, timestamps, referrers, user agents, and OAuth tokens—is documented in the app so teams know exactly how it is used.</p>
+        </div>
+        <div class="rounded-xl border border-slate-200 bg-slate-50/80 p-4">
+          <p class="font-semibold text-slate-900">Security by design</p>
+          <p class="mt-1">Access is gated behind Webflow OAuth, tokens are encrypted at rest, and we monitor for unauthorized access. You can disconnect and purge data at any time.</p>
+        </div>
+      </div>
+      <div class="flex items-center justify-between gap-4 border-t border-slate-200 px-6 py-4 bg-slate-50/70">
+        <p class="text-xs text-slate-500">Questions? Reach us at <a href="mailto:privacy@404guardian.app" class="font-medium text-brand-600 hover:text-brand-700">privacy@404guardian.app</a></p>
+        <button type="button" id="acknowledgePolicy" class="inline-flex items-center rounded-lg bg-brand-600 px-4 py-2 text-sm font-semibold text-white shadow hover:bg-brand-700">Got it</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="privacyModal" class="fixed inset-0 z-50 hidden bg-slate-900/60 backdrop-blur-sm px-4 py-10 overflow-y-auto">
+    <div class="mx-auto max-w-xl rounded-2xl border border-slate-200 bg-white shadow-xl">
+      <div class="flex items-start justify-between gap-6 border-b border-slate-200 px-6 py-5">
+        <div>
+          <p class="text-sm font-semibold uppercase tracking-wide text-brand-600">Privacy</p>
+          <h3 class="mt-1 text-2xl font-bold tracking-tight text-slate-900">Your data, your control</h3>
+          <p class="mt-2 text-sm text-slate-600">404 Guardian handles the minimum information required to monitor 404 errors and keeps you in charge of every decision.</p>
+        </div>
+        <button type="button" id="closePrivacy" class="rounded-lg p-1.5 text-slate-400 hover:bg-slate-100 hover:text-slate-600" aria-label="Close privacy dialog"><span aria-hidden="true">&times;</span></button>
+      </div>
+      <div class="space-y-4 px-6 py-6 text-sm text-slate-600">
+        <div class="rounded-xl border border-slate-200 bg-slate-50/80 p-4">
+          <p class="font-semibold text-slate-900">What we collect</p>
+          <p class="mt-1">We log missing paths, timestamps, referrers, user agents, and encrypted OAuth tokens strictly to surface 404 insights.</p>
+        </div>
+        <div class="rounded-xl border border-slate-200 bg-slate-50/80 p-4">
+          <p class="font-semibold text-slate-900">How we use it</p>
+          <p class="mt-1">Your data never leaves our secured environment and is only processed to display analytics and enable redirect workflows.</p>
+        </div>
+        <div class="rounded-xl border border-slate-200 bg-slate-50/80 p-4">
+          <p class="font-semibold text-slate-900">Control & deletion</p>
+          <p class="mt-1">Disconnect anytime, request data export, or trigger deletion through the dashboard or by contacting <a href="mailto:privacy@404guardian.app" class="font-medium text-brand-600 hover:text-brand-700">privacy@404guardian.app</a>.</p>
+        </div>
+      </div>
+      <div class="flex items-center justify-end gap-3 border-t border-slate-200 px-6 py-4 bg-slate-50/70">
+        <button type="button" id="acknowledgePrivacy" class="inline-flex items-center rounded-lg bg-brand-600 px-4 py-2 text-sm font-semibold text-white shadow hover:bg-brand-700">Understood</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="termsModal" class="fixed inset-0 z-50 hidden bg-slate-900/60 backdrop-blur-sm px-4 py-10 overflow-y-auto">
+    <div class="mx-auto max-w-xl rounded-2xl border border-slate-200 bg-white shadow-xl">
+      <div class="flex items-start justify-between gap-6 border-b border-slate-200 px-6 py-5">
+        <div>
+          <p class="text-sm font-semibold uppercase tracking-wide text-brand-600">Terms</p>
+          <h3 class="mt-1 text-2xl font-bold tracking-tight text-slate-900">Straightforward responsibilities</h3>
+          <p class="mt-2 text-sm text-slate-600">These summary terms outline how you use 404 Guardian safely and what we commit to delivering.</p>
+        </div>
+        <button type="button" id="closeTerms" class="rounded-lg p-1.5 text-slate-400 hover:bg-slate-100 hover:text-slate-600" aria-label="Close terms dialog"><span aria-hidden="true">&times;</span></button>
+      </div>
+      <div class="space-y-4 px-6 py-6 text-sm text-slate-600">
+        <div class="rounded-xl border border-slate-200 bg-slate-50/80 p-4">
+          <p class="font-semibold text-slate-900">Fair use</p>
+          <p class="mt-1">Use the dashboards to monitor 404 issues for your own Webflow sites. Automated scraping or resale of insights is not allowed.</p>
+        </div>
+        <div class="rounded-xl border border-slate-200 bg-slate-50/80 p-4">
+          <p class="font-semibold text-slate-900">Service commitments</p>
+          <p class="mt-1">We maintain reasonable uptime, safeguard your data, and notify you of significant changes to features or pricing.</p>
+        </div>
+        <div class="rounded-xl border border-slate-200 bg-slate-50/80 p-4">
+          <p class="font-semibold text-slate-900">Liability & compliance</p>
+          <p class="mt-1">404 Guardian is a best-effort tool. You remain responsible for verifying redirects and complying with applicable laws.</p>
+        </div>
+      </div>
+      <div class="flex items-center justify-end gap-3 border-t border-slate-200 px-6 py-4 bg-slate-50/70">
+        <button type="button" id="acknowledgeTerms" class="inline-flex items-center rounded-lg bg-brand-600 px-4 py-2 text-sm font-semibold text-white shadow hover:bg-brand-700">Agree</button>
+      </div>
+    </div>
+  </div>
 
   <script>
     // Mobile menu toggle
@@ -373,6 +506,61 @@
     btn?.addEventListener('click', () => menu.classList.toggle('hidden'));
     // Year
     document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Data policy modal
+    const dataPolicyBtn = document.getElementById('dataPolicyBtn');
+    const dataPolicyModal = document.getElementById('dataPolicyModal');
+    const closeDataPolicy = document.getElementById('closeDataPolicy');
+    const acknowledgePolicy = document.getElementById('acknowledgePolicy');
+
+    const privacyBtn = document.getElementById('privacyBtn');
+    const privacyModal = document.getElementById('privacyModal');
+    const closePrivacy = document.getElementById('closePrivacy');
+    const acknowledgePrivacy = document.getElementById('acknowledgePrivacy');
+
+    const termsBtn = document.getElementById('termsBtn');
+    const termsModal = document.getElementById('termsModal');
+    const closeTerms = document.getElementById('closeTerms');
+    const acknowledgeTerms = document.getElementById('acknowledgeTerms');
+
+    const openModal = (modal) => {
+      if (!modal) return;
+      modal.classList.remove('hidden');
+      document.body.classList.add('overflow-hidden');
+    };
+
+    const closeModal = (modal) => {
+      if (!modal) return;
+      modal.classList.add('hidden');
+      document.body.classList.remove('overflow-hidden');
+    };
+
+    dataPolicyBtn?.addEventListener('click', () => openModal(dataPolicyModal));
+    closeDataPolicy?.addEventListener('click', () => closeModal(dataPolicyModal));
+    acknowledgePolicy?.addEventListener('click', () => closeModal(dataPolicyModal));
+    dataPolicyModal?.addEventListener('click', (event) => {
+      if (event.target === dataPolicyModal) {
+        closeModal(dataPolicyModal);
+      }
+    });
+
+    privacyBtn?.addEventListener('click', () => openModal(privacyModal));
+    closePrivacy?.addEventListener('click', () => closeModal(privacyModal));
+    acknowledgePrivacy?.addEventListener('click', () => closeModal(privacyModal));
+    privacyModal?.addEventListener('click', (event) => {
+      if (event.target === privacyModal) {
+        closeModal(privacyModal);
+      }
+    });
+
+    termsBtn?.addEventListener('click', () => openModal(termsModal));
+    closeTerms?.addEventListener('click', () => closeModal(termsModal));
+    acknowledgeTerms?.addEventListener('click', () => closeModal(termsModal));
+    termsModal?.addEventListener('click', (event) => {
+      if (event.target === termsModal) {
+        closeModal(termsModal);
+      }
+    });
   </script>
 </body>
 </html>
